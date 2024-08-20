@@ -68,6 +68,48 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
 */
 
+// const Dolphins = (96 + 108 + 89) / 3;
+// const Koalas = (88 + 91 + 110) / 3;
 
+// if(Dolphins > Koalas){
+//     console.log("Dolphins wins");
+// }else if(Dolphins < Koalas){
+//     console.log("Koalas wins");
+// }else{
+//     console.log("Tie!");
+// }
+
+
+////////////////////////////////////
+// Coding Challenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+
+GOOD LUCK 😀
+*/
+
+let check = Number(prompt("What's the total amount?"))
+let total = 0;
+let tip = 0;
+
+switch (check){
+    case (check >= 0 && check < 50) || (check > 300):
+        tip = check * 0.2;
+        
+    default:
+        tip = check * 0.2;
+}
+
+total = check + tip;
+console.log("Check is " + check + ", tip is " + tip + ", and the total is " + total);
 
 

@@ -1,5 +1,27 @@
 # JavaScript Note
 
+## History
+#### 1995
+Brendan Eich created Mocha in 10 days.
+
+#### 1996
+Changed to JavaScript to attract the Java developers.
+
+#### 1997
+ECMAScript is the first official standard for JavaScript.
+
+#### 2009
+ES5 (ECMAScipt 5) is releases
+
+#### 2015
+ES6 released. The biggest update ever.
+
+#### 2016-present
+Annual updates.
+
+#### Backwards compatible
+1997 js can also be used in 2024. Only added incremental updates but never removes the old features.
+
 ## Primitive Data Type
 - Number: all numbers in js are floating points
 - String
@@ -48,6 +70,60 @@ console.log(Boolean(''));			// false
 
 '18' == 18 		// true (loose)
 '18' === 18		// false (strict)
+
+
+## Logical
+//Switch Demo
+```
+const day = "Monday";
+
+switch(day){
+	case "Monday":
+		console.log("I hate Monday");
+	default:
+		console.log("I hate everyday");
+}
+
+```
+
+
+A good helper
+```
+// a good header to avoid the potential errors
+'use strict'
+
+```
+
+## Function
+```
+// function declaration
+function calAge(birthYear){
+	return 2024 - birthYear;
+}
+
+// function expression
+const calAge = function(birthYear){
+	return 2024 - birthYear;
+}
+
+// arrow function
+const calAge = birthYear => 2024 - birthYear;
+
+const yearUntilRetirement = (birthYear, firstName) =>{
+	const age = 2024 - birthYear;
+	return `${firstName} ${birthYear}`;
+}
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
