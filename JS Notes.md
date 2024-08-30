@@ -116,6 +116,20 @@ const yearUntilRetirement = (birthYear, firstName) =>{
 
 ```
 
+## Array
+```
+const friends = ["Michael", "Steve"]
+
+// add new elements
+friends.push("Jamie");		// to the end
+friends.unshift("Cathy");	// to the head
+
+// remove elements
+friends.pop();				// from the end
+friends.shift();			// from the head
+
+let friends.indexOf("Steve")
+```
 
 
 
